@@ -1,0 +1,7 @@
+# MVPDemo
+Android MVP模式的一个demo,打开界面获取天气信息并显示。
+包的分支：bean,model,view,presenter
+IWeatherView是接口，WeatherActiviy是其的具体实现，用户用户Ui的交互
+WeatherModel完成网络数据的请求，WeatherPresenter含有IWeatherView跟WeatherModel
+的引用,WeatherActiviy含有WeatherPresenter的对象引用，通过该引用来操作WeatherModel,
+同时网络数据返回更新WeatherActivity
